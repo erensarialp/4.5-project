@@ -1,2 +1,7 @@
 datasource:
   url: localhost:5432
+
+
+eureka:
+  register-with-eureka: true
+  fetch-registry: true
