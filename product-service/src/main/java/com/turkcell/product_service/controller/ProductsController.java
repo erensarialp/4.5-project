@@ -26,13 +26,13 @@ public class ProductsController {
         return "Product created successfully";
     }
 
-    @PutMapping
-    public String updateProduct() {
+    @PutMapping("{id}")
+    public String updateProduct(@PathVariable String id) {
         return "Product updated successfully";
     }
 
-    @DeleteMapping
-    public String deleteProduct() {
+    @DeleteMapping("{id}")
+    public String deleteProduct(@PathVariable String id) {
         return "Product deleted successfully";
     }
 }
